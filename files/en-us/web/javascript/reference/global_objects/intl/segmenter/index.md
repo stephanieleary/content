@@ -71,6 +71,10 @@ console.table(Array.from(segments));
 // [{segment: '吾輩', index: 0, input: '吾輩は猫である。名前はたぬき。', isWordLike: true},
 // etc.
 // ]
+
+const words = Array.from(segments).filter(segment => segment.isWordLike === true);
+console.log(words.length);
+// Expected output: 5
 ```
 
 ## Specifications
